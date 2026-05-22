@@ -25,7 +25,7 @@ White-box AI           Statistical AI             Personalization AI
 
 ### Project 1 — Rule-Based AI Chatbot 
 **Track:** Control Flow & Logic
-**Folder:** `project1-chatbot/`
+**Folder:** `project1-chatbot`
 
 | | |
 |---|---|
@@ -47,7 +47,7 @@ White-box AI           Statistical AI             Personalization AI
 
 ### Project 2 — Data Classification Using AI 
 **Track:** Supervised Machine Learning
-**Folder:** `project2/`
+**Folder:** `project2`
 
 | | |
 |---|---|
@@ -74,7 +74,7 @@ Iris Dataset → StandardScaler → 80/20 Split → KNN (k=5) → Confusion Matr
 
 ### Project 3 — AI Recommendation Logic 
 **Track:** Content-Based Filtering & Personalization
-**Folder:** `project3-recommender/`
+**Folder:** `project3`
 
 | | |
 |---|---|
