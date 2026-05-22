@@ -101,13 +101,11 @@ decodelabs-ai-internship/
 ├── README.md                              ← you are here
 │
 ├── project1-chatbot/
-│   └──chatbot.ipynb                      ← main script
-│   
+│   └──chatbot.ipynb                      ← main script   
 │
 ├── project2-iris-knn/
 │   └── Data classification.ipynb               ← full pipeline script               
 │   
-│
 └── project3-recommender/
     └── project3_AI Recommendation Logic.ipynb            ← main script 
      
