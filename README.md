@@ -1,7 +1,7 @@
 # DecodeLabs — AI Engineering Internship 
 ### Batch 2026 | Industrial Training Kit
 
-A complete portfolio of AI projects built during the DecodeLabs Industrial Training Program. This repository documents a structured progression from foundational rule-based logic through supervised machine learning to recommendation systems — each project a working, deployable milestone.
+A complete of AI projects built during the DecodeLabs Industrial Training Program. This repository documents a structured progression from foundational rule-based logic through supervised machine learning to recommendation systems — each project a working, deployable milestone.
 
 ---
 
