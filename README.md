@@ -123,22 +123,6 @@ decodelabs-ai-internship/
 
 ---
 
-## Tech Stack
-
-| Tool | Used In | Purpose |
-|------|---------|---------|
-| Python 3.10+ | All | Core language |
-| `random` | Project 1 | Randomized chatbot responses |
-| `datetime` | Project 1 | Live time and date handling |
-| `math` | Project 3 | TF-IDF and cosine similarity |
-| `collections` | Project 3 | Frequency counting |
-| `scikit-learn` | Project 2 | KNN model, StandardScaler, metrics |
-| `pandas` | Project 2 | Data loading and exploration |
-| `matplotlib` | Project 2 | Plotting |
-| `seaborn` | Project 2 | Heatmap visualization |
-
----
-
 ## Key Concepts Covered
 
 **Foundational AI — Project 1**
