@@ -105,11 +105,11 @@ decodelabs-ai-internship/
 │   
 │
 ├── project2-iris-knn/
-│   └── project2.ipynb               ← full pipeline script               
+│   └── Data classification.ipynb               ← full pipeline script               
 │   
 │
 └── project3-recommender/
-    └── project3_recommender.ipynb            ← main script 
+    └── project3_AI Recommendation Logic.ipynb            ← main script 
      
 ```
 
