@@ -38,7 +38,7 @@ White-box AI           Statistical AI             Personalization AI
 - Sanitizes input with `.lower().strip()` to normalize case and whitespace
 - Matches 12 intent categories with randomized responses for natural variation
 - Handles live dynamic queries — current time and today's date
-- Displays `[BOT | #TAG]` labels for full white-box traceability
+- Displays `[Bot | #Tag]` labels for full white-box traceability
 
 **Intents:** `#Greeting` `#Identity` `#Status` `#Joke` `#Weather` `#Age` `#Thanks` `#Help` `#Time` `#Date` `#Exit` `#Defualt`
 
@@ -146,6 +146,5 @@ decodelabs-ai-internship/
 ## About
 
 Built as part of the **DecodeLabs Industrial Training Program — Batch 2026**.
-DecodeLabs is an AI engineering internship platform based in Greater Lucknow, India.
 
 📞 +91 89330 06408 &nbsp;|&nbsp; ✉ decodelabs.tech@gmail.com &nbsp;|&nbsp; 🌐 www.decodelabs.tech
