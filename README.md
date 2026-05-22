@@ -61,14 +61,6 @@ White-box AI           Statistical AI             Personalization AI
 Iris Dataset → StandardScaler → 80/20 Split → KNN (k=5) → Confusion Matrix + F1 Score
 ```
 
-**Results:**
-
-| Class | Precision | Recall | F1-Score |
-|-------|-----------|--------|----------|
-| Setosa | 1.00 | 1.00 | 1.00 |
-| Versicolor | 1.00 | 1.00 | 1.00 |
-| Virginica | 1.00 | 1.00 | 1.00 |
-
 
 ---
 
