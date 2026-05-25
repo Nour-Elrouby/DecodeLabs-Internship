@@ -1,44 +1,32 @@
 # DecodeLabs — AI Engineering Internship 
 ### Batch 2026 | Industrial Training Kit
 
-A complete of AI projects built during the DecodeLabs Industrial Training Program. This repository documents a structured progression from foundational rule-based logic through supervised machine learning to recommendation systems — each project a working, deployable milestone.
+A complete of AI projects built during the DecodeLabs Industrial Training Program. This repository documents a structured progression from foundational rule-based logic through supervised machine learning, recommendation systems, and computer vision — each project a working, deployable milestone.
 
 ---
 
 ## Progression Map
 
 ```
-Project 1              Project 2                  Project 3
-Rule-Based         →   Data Classification    →   Recommendation Logic
-Chatbot                                          (Content-Based Filtering)
+Project 1          Project 2             Project 3               Project 4
+Rule-Based     →   Classification    →   Recommendation      →   Image & Text
+Chatbot            (KNN)                 (Content Filtering)     Recognition 
 
-Control Flow       →   Pattern Recognition    →   Active Prediction
-if-else + dicts        Train / Test / Predict     TF-IDF + Cosine Similarity
-White-box AI           Statistical AI             Personalization AI
+Control Flow   →   Pattern           →   Active Prediction    →   Machine Perception
+if-else            Recognition           TF-IDF + Cosine         OCR / Object Detection
+White-box AI       Statistical AI        Personalization AI      Pre-trained Models
 ```
 
-> Each project unlocks the next. Completion is verified for quality by DecodeLabs.
 
 ---
 
 ## Projects
 
 ### Project 1 — Rule-Based AI Chatbot 
-**Track:** Control Flow & Logic
-**Folder:** `project1-chatbot`
+**Track:** Control Flow & Logic &nbsp;|&nbsp; **Folder:** `project1-chatbot/`
 
-| | |
-|---|---|
-| **Goal** | Build a deterministic chatbot using if-else logic and keyword matching |
-| **Algorithm** | Rule-based intent matching against a structured knowledge base |
-| **Key skills** | Control flow, input sanitization, infinite loop, fallback handling |
 
-**What it does:**
-- Runs in a continuous `while True` loop, exits cleanly on bye/quit/exit
-- Sanitizes input with `.lower().strip()` to normalize case and whitespace
-- Matches 12 intent categories with randomized responses for natural variation
-- Handles live dynamic queries — current time and today's date
-- Displays `[Bot | #Tag]` labels for full white-box traceability
+**What it does:** Runs in a continuous `while True` loop · Sanitizes input with `.lower().strip()` · Matches 12 intent categories with randomized responses · Handles live time/date queries · Displays `[Bot | #Tag]` labels for full white-box traceability
 
 **Intents:** `#Greeting` `#Identity` `#Status` `#Joke` `#Weather` `#Age` `#Thanks` `#Help` `#Time` `#Date` `#Exit` `#Defualt`
 
@@ -46,39 +34,22 @@ White-box AI           Statistical AI             Personalization AI
 ---
 
 ### Project 2 — Data Classification Using AI 
-**Track:** Supervised Machine Learning
-**Folder:** `project2-Data classification`
+**Track:** Supervised Machine Learning &nbsp;|&nbsp; **Folder:** `project2-Data Classification/`
 
-| | |
-|---|---|
-| **Goal** | Classify Iris flower species from measurements using a trained ML model |
-| **Algorithm** | K-Nearest Neighbors (KNN) |
-| **Dataset** | Iris Benchmark — 150 samples, 4 features, 3 balanced classes |
-| **Key skills** | Feature scaling, train/test split, model evaluation, hyperparameter tuning |
 
-**Pipeline:**
-```
-Iris Dataset → StandardScaler → 80/20 Split → KNN (k=5) → Confusion Matrix + F1 Score
-```
+
+**Pipeline:** `Iris Dataset → StandardScaler → 80/20 Split → KNN (k=5) → Confusion Matrix + F1`
+
+**Results:** 100% accuracy on test set · Outputs: `confusion_matrix.png` · `elbow_method.png`
 
 
 ---
 
 ### Project 3 — AI Recommendation Logic 
-**Track:** Content-Based Filtering & Personalization
-**Folder:** `project3-AI Recommendation Logic`
+**Track:** Content-Based Filtering &nbsp;|&nbsp; **Folder:** `project3-recommender/`
 
-| | |
-|---|---|
-| **Goal** | Recommend tech career paths by matching user skills to job role profiles |
-| **Algorithm** | TF-IDF Vectorization + Cosine Similarity |
-| **Dataset** | Hand-crafted knowledge base — 12 job roles × 10 skills each |
-| **Key skills** | Vector space models, similarity math, ranking pipelines, cold start handling |
 
-**Pipeline:**
-```
-User Skills → TF-IDF Vectors → Cosine Similarity → Sort → Top-3 Recommendations
-```
+**Pipeline:** `User Skills → TF-IDF Vectors → Cosine Similarity → Sort → Top-3 Recommendations`
 
 **Example output:**
 ```
@@ -90,6 +61,16 @@ Input: python, machine learning, docker
 ```
 
 
+---
+
+### Project 4 — Image & Text Recognition
+**Track:** Computer Vision & Pre-trained Models &nbsp;|&nbsp; **Folder:** `project4-recognition/`
+
+
+
+**OCR Pipeline:** `Load → Grayscale → Gaussian Blur → Otsu Threshold → pytesseract → Text + Confidence`
+
+**Detection Pipeline:** `Load → Blob (300×300) → MobileNet-SSD → 80% Gate → Labelled Bounding Boxes`
 
 ---
 
@@ -98,17 +79,21 @@ Input: python, machine learning, docker
 ```
 decodelabs-ai-internship/
 │
-├── README.md                              ← you are here
+├── README.md                                  ← you are here
 │
 ├── project1-chatbot/
-│   └──chatbot.ipynb                      ← main script   
+│   └── chatbot.ipynb
 │
 ├── project2-iris-knn/
-│   └── Data classification.ipynb               ← full pipeline script               
+│   └── project2_iris_knn.ipynb
 │   
-└── project3-recommender/
-    └── project3_AI Recommendation Logic.ipynb            ← main script 
-     
+├── project3-recommender/
+│   └── project3_recommender.py
+│
+└── project4-recognition/
+    ├── project4_recognition.ipynb
+    ├── MobileNetSSD_deploy.prototxt           ← download for Path 2
+    └── MobileNetSSD_deploy.caffemodel         ← download for Path 2
 ```
 
 ---
@@ -116,28 +101,16 @@ decodelabs-ai-internship/
 ## Key Concepts Covered
 
 **Foundational AI — Project 1**
-- Deterministic vs probabilistic AI systems
-- White-box traceability — every decision is fully auditable
-- IPO model: Input sanitization → Intent matching → Response generation
-- Why rule-based guardrails matter in production LLM systems
+Deterministic vs probabilistic AI · White-box traceability · IPO model · Rule-based guardrails in production LLM systems
 
 **Supervised Machine Learning — Project 2**
-- Supervised learning pipeline — train, test, validate
-- Feature scaling — why StandardScaler is required before KNN
-- Train/test split — preventing data leakage and order bias
-- Confusion matrix — TP, FP, FN, TN breakdown per class
-- F1-score — robust metric for imbalanced data
-- Elbow method — systematic hyperparameter tuning
-- The "accuracy mirage" — why raw accuracy alone misleads
+Supervised learning pipeline · Feature scaling (StandardScaler) · Train/test split · Confusion matrix (TP/FP/FN/TN) · F1-score · Elbow method · The accuracy mirage
 
 **Recommendation Systems — Project 3**
-- Content-based filtering vs collaborative filtering
-- TF-IDF — penalizing generic skills, rewarding specific ones
-- Vector space modeling — converting qualitative tags to numerical arrays
-- Cosine Similarity — magnitude-invariant angle measurement (range: 0–1)
-- The Cold Start Problem — user and item cold start handling strategies
-- 4-step ranking pipeline — Ingestion → Scoring → Sorting → Filtering
-- Top-N filtering — preventing choice overload
+Content-based vs collaborative filtering · TF-IDF vectorization · Shared vocabulary space · Cosine similarity (magnitude-invariant) · Cold Start Problem · 4-step ranking pipeline · Top-N filtering
+
+**Computer Vision — Project 4**
+Structured vs unstructured data · Transfer learning from ImageNet · Image as 3D array (H×W×C) · Grayscale conversion · Gaussian blur · Adaptive thresholding (Otsu's method) · Blob construction · Softmax & confidence scores · The 80% confidence gate · Bounding box coordinates
 
 ---
 
