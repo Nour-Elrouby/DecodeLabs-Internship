@@ -92,7 +92,9 @@ decodelabs-ai-internship/
 │
 └── project4-recognition/
     ├── project4_recognition.ipynb
-    ├── MobileNetSSD_deploy.prototxt           ← download for Path 2
+    │
+    ├── MobileNetSSD_deploy.prototxt         ← download for Path 2
+    │
     └── MobileNetSSD_deploy.caffemodel         ← download for Path 2
 ```
 
