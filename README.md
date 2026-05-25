@@ -23,7 +23,7 @@ White-box AI       Statistical AI        Personalization AI      Pre-trained Mod
 ## Projects
 
 ### Project 1 — Rule-Based AI Chatbot 
-**Track:** Control Flow & Logic &nbsp;|&nbsp; **Folder:** `project1-chatbot/`
+**Track:** Control Flow & Logic &nbsp;|&nbsp; **Folder:** `project1-chatbot`
 
 
 **What it does:** Runs in a continuous `while True` loop · Sanitizes input with `.lower().strip()` · Matches 12 intent categories with randomized responses · Handles live time/date queries · Displays `[Bot | #Tag]` labels for full white-box traceability
@@ -34,7 +34,7 @@ White-box AI       Statistical AI        Personalization AI      Pre-trained Mod
 ---
 
 ### Project 2 — Data Classification Using AI 
-**Track:** Supervised Machine Learning &nbsp;|&nbsp; **Folder:** `project2-Data Classification/`
+**Track:** Supervised Machine Learning &nbsp;|&nbsp; **Folder:** `project2-Data Classification`
 
 
 
@@ -46,7 +46,7 @@ White-box AI       Statistical AI        Personalization AI      Pre-trained Mod
 ---
 
 ### Project 3 — AI Recommendation Logic 
-**Track:** Content-Based Filtering &nbsp;|&nbsp; **Folder:** `project3-recommender/`
+**Track:** Content-Based Filtering &nbsp;|&nbsp; **Folder:** `project3-recommender`
 
 
 **Pipeline:** `User Skills → TF-IDF Vectors → Cosine Similarity → Sort → Top-3 Recommendations`
@@ -64,7 +64,7 @@ Input: python, machine learning, docker
 ---
 
 ### Project 4 — Image & Text Recognition
-**Track:** Computer Vision & Pre-trained Models &nbsp;|&nbsp; **Folder:** `project4-recognition/`
+**Track:** Computer Vision & Pre-trained Models &nbsp;|&nbsp; **Folder:** `project4-recognition`
 
 
 
